@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/mcp-server.json",
+  "name": "vibesecurity",
+  "version": "1.0.0",
+  "description": "Autonomous security engineering layer for AI & vibe coders. Break down apps, scan vulnerabilities, generate minimal patches, preserve behavior, and prove fixes.",
+  "transport": {
+    "type": "stdio",
+    "command": "python3",
+    "args": [
+      "-m",
+      "vibesecurity",
+      "mcp"
+    ]
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": true,
+    "prompts": true
+  }
+}
+

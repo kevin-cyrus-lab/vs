@@ -1,0 +1,16 @@
+{
+  "name": "default",
+  "description": "Standard balance for vibe coders. Automatically repairs low and medium risk findings while verifying zero regression.",
+  "allowed_auto_risks": ["low", "medium"],
+  "require_git_checkpoint": true,
+  "use_isolated_worktree": true,
+  "preserve_user_changes": true,
+  "require_regression_tests": true,
+  "require_build_validation": true,
+  "require_security_rescan": true,
+  "rollback_on_failure": true,
+  "redact_secrets": true,
+  "fail_on_critical": true,
+  "max_auto_patch_lines": 150
+}
+

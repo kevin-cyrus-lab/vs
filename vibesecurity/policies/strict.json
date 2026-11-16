@@ -1,0 +1,16 @@
+{
+  "name": "strict",
+  "description": "Production security gate. Treats all findings strictly, enforces type checks and test passes, and blocks build on any high/critical finding.",
+  "allowed_auto_risks": ["low", "medium"],
+  "require_git_checkpoint": true,
+  "use_isolated_worktree": true,
+  "preserve_user_changes": true,
+  "require_regression_tests": true,
+  "require_build_validation": true,
+  "require_security_rescan": true,
+  "rollback_on_failure": true,
+  "redact_secrets": true,
+  "fail_on_critical": true,
+  "max_auto_patch_lines": 200
+}
+
